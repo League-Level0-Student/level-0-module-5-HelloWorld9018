@@ -8,18 +8,16 @@ int x;
 	
 	String number = JOptionPane.showInputDialog(null, "Prime-or-not-meter", "Enter a number");
 	x = Integer.parseInt(number);
-	boolean prime = false;
+	boolean prime = true;
+	
 	for(int i = 2; i < x; i++) {
 			
-			if(x % i == 0) {
+			if(x % i == 0 && x != 2 && x != 1) {
 				
 				prime = false;
-				break;
+			break;
 			}
-			else {
-				prime=true;
-				
-			}
+
 	}
 	
 	if (prime == false) {
