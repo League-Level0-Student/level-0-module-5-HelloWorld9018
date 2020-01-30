@@ -6,9 +6,8 @@ package _04_guessing_pi;
 
 import javax.swing.JOptionPane;
 
-public class GuessingPi {
+public class GuessingPi {public static void main(String[] args) {
 	// 1. Make a main method and make sure your program can run
-
 		// 2. Make a String variable to hold the value of Pi.
 		//    Get the first few digits from http://www.piday.org/million/.
 
@@ -35,5 +34,5 @@ public class GuessingPi {
 					//    to start over. Use 'break;' to break out of the loop.
 
 }
-
+}
 
