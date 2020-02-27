@@ -55,16 +55,27 @@ public class ForLoop {public static void main(String[] args) {
 			}
 		}
 		 
-		//for(int i = 0; i <= 2; i ++) {
-			for(int j = 1 ; j<= 3; j++) {
-			int a  = j;
-			a = 9;
-				System.out.print(a + " " + a + " " + a);
+		//for(int i = 1; i <= 3; i ++) {
+		
+	 
+			//for(int j = 1 ; j<= 3; j++) {
 			
-				
-			System.out.println();
+				for(int a  = 1; a<=9; a ++) {
+	
+				System.out.print(a + " ");
+				if (a % 3  == 0 ) {
+					System.out.println();
+				}
+			//
 			}
-		//}
+			String b = "*";
+				for(int a  = 1; a<=6; a ++) {
+					for(int r = 1; r <= a; r++) {
+					System.out.print(b );
+			
+					}
+				System.out.println();
+				}
 		
 
 	
