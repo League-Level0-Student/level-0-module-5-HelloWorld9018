@@ -12,7 +12,7 @@ public class SkillPractice {
 	
 	
 	SkillPractice skills = new SkillPractice();
-   // skills.skill1();
+   skills.skill1();
     skills.skill2();
     skills.skill3();
     skills.skill4();
@@ -42,7 +42,9 @@ int fin = Integer.parseInt(height);
 if (fin < 36) {
 	JOptionPane.showMessageDialog(null, "Eat your Wheaties.");
 }
-
+else {
+	JOptionPane.showMessageDialog(null, "Okay");
+}
 
 
 }
@@ -71,43 +73,52 @@ int num2 = rand.nextInt(10);
 //Using a pop-up, tell the user the difference between the numbers// Hint: use subtraction 
 System.out.println(num2);
 
-JOptionPane.showMessageDialog(null, num - num2);
+JOptionPane.showMessageDialog(null, "The difference between " + num + " and " + num2 + " is " + (num - num2));
 
 }
 
 void skill4() {// In a pop-up, ask the user for the city they live in 
-JOptionPane.showInputDialog("What city do you live in?");
+String location = JOptionPane.showInputDialog("What city do you live in?");
 
 
 //If they answered "San Diego", tell them they live in America's Finest City 
-
+if (location.equalsIgnoreCase("San Diego")) {
+	JOptionPane.showMessageDialog(null, "You live in America's finest city.");
+}
 
 
 //Otherwise, tell them to move to San Diego 
 
-
+else {
+	JOptionPane.showMessageDialog(null, "Move to San Diego");
+}
 
 //Create a variable - cars - and initialize it to the number of cars your family has.// If there are 0 cars, use a pop-up to display, "I bet you use public transportation." 
-
-
+String amount = JOptionPane.showInputDialog("How many cars does your family have?");
+int cars = Integer.parseInt(amount);
+ if (cars== 1) {
+	 JOptionPane.showMessageDialog(null, "You HAVE A TESLA!");
+ }
 
 //If there is 1 car, use a pop-up to display the make/model of the car 
 
 
 
 //If there is more than 1 car, use a pop-up to display how many wheels the// cars have between them. 
-
+if (cars > 1) {
+	JOptionPane.showMessageDialog(null, "You have " + cars * 4 + " car wheels");
+}
 
 
 }
 
 void skill5() {// In a pop-up, ask the user for the name of their school 
-
+String school = JOptionPane.showInputDialog("What is the name of your school?");
 
 
 //In another pop-up, tell the user, that their school is a fantastic school.// You must include the name of the school in the message. 
 
-
+JOptionPane.showMessageDialog(null, school + " is a fantastic school!");
 
 }
 }
