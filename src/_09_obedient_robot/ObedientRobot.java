@@ -10,6 +10,9 @@ public class ObedientRobot {
 static Robot bob = new Robot();
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		for (int i = 0; i<5; i++) {
+			System.out.println(i);
+		}
 		bob.miniaturize();
 		bob.setSpeed(20);
 		bob.setPenWidth(5);
